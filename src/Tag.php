@@ -10,15 +10,11 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use Spatie\EloquentSortable\Sortable;
 use Spatie\EloquentSortable\SortableTrait;
-use Spatie\Translatable\HasTranslations;
 
 class Tag extends Model implements Sortable
 {
     use SortableTrait;
-    use HasTranslations;
     use HasFactory;
-
-    public array $translatable = ['name'];
 
     public $guarded = [];
 
