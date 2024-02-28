@@ -28,7 +28,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "HamedRajabpour\\Tags\\Test\\": "tests"
+            "Hamedrajabpour\\Tags\\Test\\": "tests"
         }
     },
     "scripts": {
@@ -43,7 +43,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "HamedRajabpour\\Tags\\TagsServiceProvider"
+                "Hamedrajabpour\\Tags\\TagsServiceProvider"
             ]
         }
     },
