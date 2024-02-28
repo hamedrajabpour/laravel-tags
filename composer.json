@@ -1,0 +1,18 @@
+{
+    "name": "hamedrajabpour/laravel-tags",
+    "description": "Add tags and taggable behaviour to your Laravel app",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hamedrajabpour\\LaravelTags\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "hamed rajabpoor",
+            "email": "hamedrajabpoor724@gmail.com"
+        }
+    ],
+    "require": {}
+}
