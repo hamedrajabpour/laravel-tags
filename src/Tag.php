@@ -1,6 +1,6 @@
 <?php
 
-namespace HamedRajabpour\Tags;
+namespace Hamedrajabpour\Tags;
 
 use ArrayAccess;
 use Illuminate\Database\Eloquent\Builder;
