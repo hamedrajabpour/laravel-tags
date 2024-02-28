@@ -1,6 +1,6 @@
 <?php
 
-namespace HamedRajabpour\Tags;
+namespace Hamedrajabpour\Tags;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
