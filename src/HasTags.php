@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Tags;
+namespace HamedRajabpour\Tags;
 
 use ArrayAccess;
 use Illuminate\Database\Eloquent\Builder;
@@ -62,16 +62,12 @@ trait HasTags
             ->ordered();
     }
 
-    public function tagsTranslated(string | null $locale = null): MorphToMany
+    public function tagsTranslated(): MorphToMany
     {
-        $locale = ! is_null($locale) ? $locale : self::getTagClassName()::getLocale();
-
         return $this
             ->morphToMany(self::getTagClassName(), $this->getTaggableMorphName(), $this->getTaggableTableName())
             ->using($this->getPivotModelClassName())
             ->select('*')
-            ->selectRaw("JSON_UNQUOTE(JSON_EXTRACT(name, '$.\"{$locale}\"')) as name_translated")
-            ->selectRaw("JSON_UNQUOTE(JSON_EXTRACT(slug, '$.\"{$locale}\"')) as slug_translated")
             ->ordered();
     }
 
@@ -252,7 +248,7 @@ trait HasTags
 
             $className = static::getTagClassName();
 
-            return $className::findFromStringOfAnyType($value, $locale);
+            return $className::findFromStringOfAnyType($value);
         })->flatten();
     }
 
