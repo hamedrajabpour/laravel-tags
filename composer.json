@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Hamedrajabpour\\LaravelTags\\": "src/"
+            "Hamedrajabpour\\Tags\\": "src/"
         }
     },
     "authors": [
@@ -28,7 +28,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Tags\\Test\\": "tests"
+            "HamedRajabpour\\Tags\\Test\\": "tests"
         }
     },
     "scripts": {
@@ -43,7 +43,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Tags\\TagsServiceProvider"
+                "HamedRajabpour\\Tags\\TagsServiceProvider"
             ]
         }
     },
