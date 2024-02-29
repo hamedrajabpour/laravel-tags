@@ -7,7 +7,7 @@
 
 This package offers taggable behaviour for your models. After the package is installed the only thing you have to do is add the `HasTags` trait to an Eloquent model to make it taggable. 
 
-The Main Diffrence Between This Package & Spatie that removed translation & slug
+# The Main Diffrence Between This Package & Spatie that removed translation & slug
 
 Here are some code examples:
 
